@@ -1,0 +1,22 @@
+name: slack_plugin
+version: 0.0.1
+language: 
+description: slack plugin, send json to slack to notificate some people ...
+tags:
+ - slack
+ - plugin
+
+public: false
+
+# clone_in_docker: false
+
+inputs:
+  - name: FLOW_SLACK_INCOMING_URL
+    editable: true
+
+  - name: FLOW_SLACK_MSG_JSON
+    editable: false
+
+outputs:
+
+script_path: ./run.sh
