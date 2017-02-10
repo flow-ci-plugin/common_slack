@@ -19,5 +19,4 @@ curl -sSL "$FLOW_SLACK_INCOMING_URL" -H 'Accept-Encoding: gzip, deflate' \
   -H 'Connection: keep-alive' \
   --data-binary "$FLOW_SLACK_MSG_JSON" --compressed
 
-flow_result $?
 
