@@ -1,6 +1,6 @@
 name: slack_plugin
 version: 0.0.1
-language: 
+language:
 description: slack plugin, send json to slack to notificate some people ...
 tags:
  - slack
@@ -12,9 +12,11 @@ public: true
 
 inputs:
   - name: FLOW_SLACK_INCOMING_URL
+    desc_cn: "slack webhook 地址"
     editable: true
 
   - name: FLOW_SLACK_MSG_JSON
+    desc_cn: "slack 发送的 JSON 值"
     editable: true
 
 outputs:
